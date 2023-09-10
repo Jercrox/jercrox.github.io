@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: #333333a7;
+} */
+
+header {
+  background-color: rgba(127, 255, 212, 0.571);
+  height: 6vh;
+}
+
+main{
+  height: 70vh;
+  display: flex;
+}
+
+nav.dentrodelbody {
+  background-color: rgba(89, 157, 235, 0.638);
+  width: 30%;
+}
+
+aside {
+  background-color: rgba(89, 157, 235, 0.638);
+  width: 50%;
+}
+
+article {
+  background-color: rgba(89, 157, 235, 0.638);
+  width: 20%;
+}
+
+footer {
+  height: 10%;
+  background-color: rgba(127, 255, 212, 0.571);
+}

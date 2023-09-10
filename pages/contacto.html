@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacte con nosotros!</title>
+  <link rel="icon" type="image/png" href="../assets/img/fav-icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-matrix2.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/mensaje_emergente.css">
+</head>
+<body background="../assets/img/BACKGROUND.jpeg">
+  <div class="hover-message">Hola! Pasa el mouse por aquí para ver el menú.</div>
+  <div class="scrollable-div" id="cuerpo">
+    <header>
+      <nav>
+        <div class="menu-toggle no-opacity">
+          <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./Blog.html">Blog</a></li>
+            <li><a href="./Servicios.html">Servicios</a></li>
+            <li><a href="./nosotros.html">Quiénes somos</a></li>
+            <li><a href="./contacto.html">Contáctenos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1> Contáctenos!</h1>
+    <p>Escríbanos y un especialista se pondrá en contacto con usted.</p>
+    <div id="clearfix"></div>
+    <h2 class="subrayado">Formulario de contacto</h2>
+    <div class="margin-lef">
+    <div class="zoomed-out-content">
+      <form action="procesar_formulario.php" method="post">
+        <label for="nombre_apellido">Nombre y Apellido:</label>
+        <input type="text" id="nombre_apellido" name="nombre_apellido" required>
+        <br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+        <br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+        <br>
+
+        <input type="reset" value="Limpiar formulario">
+        <input type="submit" value="Enviar">
+    </form>
+    <p>
+        <a id="whatsapp" href="https://wa.me/5491123964489" target="_blank">Contácte por Whatsapp</a>
+    </p>
+    </div>
+    </div>
+    <footer>
+      <p>Gracias por tu visita! Giacoboni.com.ar</p>
+    </footer>
+  </div>
+</body>
+</html>

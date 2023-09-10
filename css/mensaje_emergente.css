@@ -1,0 +1,56 @@
+/* Estilos para el mensaje emergente */
+.hover-message {
+    position: fixed;
+    top: 2px;
+    right: 17px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0px;
+    padding-right: 2%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards, fadeOut 1s 6s forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 68vw;
+    text-align: right;
+    -webkit-animation: fadeIn 1s ease-in-out forwards, fadeOut 1s 6s forwards;
+    z-index: 2;
+    pointer-events: none;
+    /* pointer-events: none; */
+}
+
+/* Contenedor para el fondo */
+.hover-message-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0px;
+}
+
+/* Agregamos regla para ocultar el mensaje cuando el mouse pasa por encima */
+.hover-message:hover {
+    transform: translateX(200%); /* Mueve el elemento más lejos de la ventana */
+    display: none;
+    pointer-events: none; /* Desactivamos los clics en el mensaje */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animación de desaparición */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

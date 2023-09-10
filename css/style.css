@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "Satisfy";
+    src:url("../assets/fonts/Satisfy-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src:url("../assets/fonts/Pacifico-Regular.ttf")
+}
+
+#centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+  }
+
+.imagen-centrada {
+    padding: 10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* h1 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Satisfy";
+    text-align: center;
+    font-weight: 400;
+    line-height: 60px;
+  } */
+
+  h1 {
+    margin: 0;
+    font-family: "Satisfy";
+    text-align: center;
+    font-weight: 400;
+    line-height: 60px;
+    color: #fff; /* Color del texto en blanco */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+    animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
+  }
+  
+  @keyframes neon {
+    0% {
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    100% {
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00; /* Cambia la intensidad de la sombra */
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "Pacifico";
+    text-align: left;
+    font-weight: 400;
+    line-height: 60px;
+    color: #fff; /* Color del texto en blanco */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+    animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
+    background-color: rgba(0, 0, 0, 0.638);
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid rgb(1, 1, 1);
+  }
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: black;
+}
+
+#footer {
+    border: 1px solid black;
+}
+
+.margin-lef {
+    margin-left: 2%
+}
+
+.scrollable-div {
+  /* max-height: 79%; */
+  /* margin-left: 2%; */
+  width: 100%;
+  /* height: 67%; */
+  overflow-y: auto;
+  align-content: center;
+}
+
+/* .scrollable-div .zoomed-out-content {
+    transform: scale(0.8);
+    transform-origin: top left;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: inline-flexbox;
+} */
+
+body {
+    /* background-color: #000000; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: sans-serif;
+    font-weight: 100px;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; */
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.427);
+    padding: 0.10px;
+    font-size: 14px;
+    border: 1px solid rgba(54, 47, 255, 0);
+    text-align: center;
+}
+
+.btnForm {
+    display: grid;
+    place-items: center;
+}
+
+a.enlace {
+    text-decoration: none;
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.638);
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid greenyellow;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+a.enlace:hover {
+    color:#444;
+    background-color: greenyellow;
+}
+
+a.enlace:active {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    pointer-events: auto;
+}
+
+input:not([type="color"]), select, textarea {
+    background-color: #777;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: lightgray
+}
+
+.boton:hover{
+    box-shadow: 0 0 10px white;
+}
+
+.boton:active{
+    box-shadow: 0 0 10px white inset;
+}
+
+legend {
+    font-size: 32px;
+}
+
+:is(#video-container, .YT-Video) {
+    width: 480px; /* 560 */
+    display: inline-block;
+    height: 270px; /* 315 */
+      }
+#video-container {
+    position: relative;
+}
+#video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#video-container:hover #video-overlay {
+    opacity: 0.5;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Estilos del header y del menú */
+header {
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff000078;
+    /* flex-direction: column; */
+    z-index: 7;
+    position: absolute;
+    top: 100%;
+    font-style: inherit;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-decoration: none;
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.638);
+    padding: 0.10px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid greenyellow;
+}
+
+.menu li {
+    text-align: right;
+    padding: 10px 20px;
+    border-bottom: 1px solid #8f6363;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-toggle:hover .menu {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: #00ffff;
+}
+
+
+/* Aplicar un fondo desenfocado a los elementos de texto dentro del body */
+/* body > *:not(header) > h1,
+body > *:not(header) > h2,
+body > *:not(header) > p,
+body > *:not(header) > pre {
+    backdrop-filter: blur(20px); /* Aplicar desenfoque de 20px */
+    /* background-color: rgba(255, 255, 255, 0.2); */ /* Color de fondo desenfocado */
+/* } */
