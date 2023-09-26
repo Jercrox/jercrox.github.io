@@ -124,9 +124,9 @@ footer {
     z-index: 999;
 }
 
-footer p {
+/* footer p {
     margin: 10px 0;
-}
+} */
 
 footer i {
     color: red;

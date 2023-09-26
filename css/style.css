@@ -8,6 +8,12 @@
     src:url("../assets/fonts/Pacifico-Regular.ttf")
 }
 
+.Fondo {
+    /* background-image: url('./assets/img/BACKGROUND.jpeg');  */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #centrado {
     display: flex;
     justify-content: center;
@@ -18,7 +24,7 @@
   }
 
 .imagen-centrada {
-    padding: 10px;
+    padding: 0px;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -73,9 +79,9 @@
     text-decoration: underline;
 }
 
-.container {
-    background-color: black;
-}
+/* .container { */
+    /* background-color: black; */
+/* } */
 
 #footer {
     border: 1px solid black;
@@ -105,6 +111,8 @@
 
 body {
     /* background-color: #000000; */
+    /* background: linear-gradient(to bottom, #3498db, #1abc9c);
+    backdrop-filter: blur(10px); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -115,12 +123,24 @@ body {
     /* text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; */
 }
 
+.cool-backdropfilter {
+    backdrop-filter: grayscale(100%); /* Convierte los colores a escala de grises al 100% */
+    background-color: rgba(255, 255, 255, 0.5); /* Cambia el color y la opacidad del fondo */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Agrega un borde con transparencia */
+    padding: 20px; /* Ajusta el espaciado interno según sea necesario */
+}
+
 p {
     background-color: rgba(0, 0, 0, 0.427);
     padding: 0.10px;
     font-size: 14px;
     border: 1px solid rgba(54, 47, 255, 0);
     text-align: center;
+}
+
+.QuitarDecoracion {
+text-decoration: none; /* Elimina la decoración de subrayado */
+color: inherit; /* Hereda el color del texto del elemento padre */
 }
 
 .btnForm {
@@ -237,6 +257,15 @@ nav {
     margin: 0 auto;
 }
 
+.inlineblock {
+    display: inline-block;
+}
+
+.AlineadoAlMenu {
+    position: absolute;
+    top: 18px;
+}
+
 .menu-toggle {
     display: flex;
     align-items: center;
@@ -251,15 +280,15 @@ nav {
     /* flex-direction: column; */
     z-index: 7;
     position: absolute;
-    top: 100%;
+    top: 0px;
     font-style: inherit;
-    right: 0;
-    opacity: 0;
+    right: 83px;
+    /* opacity: 0; */
     transition: opacity 0.3s;
     text-decoration: none;
     color: greenyellow;
     background-color: rgba(0, 0, 0, 0.638);
-    padding: 0.10px;
+    /* padding: 0.10px; */
     font-size: 14px;
     text-align: center;
     display: inline-block;
@@ -268,7 +297,7 @@ nav {
 
 .menu li {
     text-align: right;
-    padding: 10px 20px;
+    padding: 0px 14px;
     border-bottom: 1px solid #8f6363;
 }
 
@@ -287,6 +316,43 @@ nav {
     color: #00ffff;
 }
 
+/* Grids */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto; /* Cambiamos a tres filas de alto automático */
+    grid-column-gap: 0px;
+    grid-row-gap: 10px; /* Añadimos un espacio entre las filas */
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 6;
+    padding: 10px; /* Añadimos un relleno para los elementos dentro del HEADER */
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 6; /* Cambiamos las coordenadas para el BODY */
+    padding: 10px; /* Añadimos un relleno para los elementos dentro del BODY */
+    top: 10%; 
+    position: absolute;
+}
+
+.div3 {
+    grid-area: 3 / 1 / 4 / 6; /* Cambiamos las coordenadas para el FOOTER */
+    padding: 10px; /* Añadimos un relleno para los elementos dentro del FOOTER */
+}
+
+/* Centrar la imagen horizontalmente en el contenedor */
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIX IMG */
+/* .img-fluid {
+    max-width: fit-content;
+} */
 
 /* Aplicar un fondo desenfocado a los elementos de texto dentro del body */
 /* body > *:not(header) > h1,

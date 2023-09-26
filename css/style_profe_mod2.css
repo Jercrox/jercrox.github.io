@@ -35,5 +35,6 @@ article {
 
 footer {
   height: 10%;
+  bottom: 0px;
   background-color: rgba(127, 255, 212, 0.571);
 }

@@ -1,52 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/img/fav-icon.png">
     <title>Página de inicio</title>
-    <link href="https://fonts.googleapis.com/css/?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Enlaces a tus CSS personalizados -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_profe_mod2.css">
-    <link rel="stylesheet" href="./css/nosotros.css">
-    <link rel="stylesheet" href="./css/mensaje_emergente.css">
-    <!-- <script src="./js/fondo.js"></script> --> <!--  FONDO ALEATORIO -->
-  </head>
-<body background="./assets/img/BACKGROUND.jpeg">
-  <header>
-    <nav>
-      <div class="menu-toggle no-opacity">
-        <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/Blog.html">Blog</a></li>
-          <li><a href="./pages/Servicios.html">Servicios</a></li>
-          <li><a href="./pages/nosotros.html">Quiénes somos</a></li>
-          <li><a href="./pages/contacto.html">Contáctenos</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- <div id="cuerpo"></div> -->
-    <!-- Agregar un área para mostrar el mensaje al pasar el mouse -->
-    <h1>Giacoboni.com.ar</h1>
-    <audio controls autoplay><source src="./assets/sound/Bienvenida.m4a" type="audio/mpeg"></audio>
-    <!-- Mensaje emergente -->
-    <!-- <div class="hover-message">Hola! Pasa el mouse por aquí para ver el menú</div> -->
-    <div class="hover-message">Hola! Pasa el mouse por aquí para ver el menú.</div>
-    <!-- Audio de Ayuda y Bienvenida, Gracias por leer esté comentario y el código fuente! Dios te bendiga !! -->
-    
-  </header>
-  <div id="centrado">
-    <img class="imagen-centrada" src="./assets/img/ServicePC.jpg" alt="Service de PC" />
-    <!-- <img class="imagen-centrada" src="./assets/img/RRHH.jpg" alt="Servicio de RRHH" /> -->
-  </div>
-  <footer id="footer">
-    <p>
-      Gracias <i class="fa fa-heart"></i> por su visita!
-      <a target="_blank" href="https://giacoboni.com.ar"> - giacoboni.com.ar</a>
-      - Diseñado por
-      <a target="_blank" href="https://www.linkedin.com/in/jeremias-e-giacoboni-b5018b25b/">Jeremias</a>
-    </p>
-    <div id="PoweredBy">Powered by Jeremias</div>
+    <!-- <link rel="stylesheet" href="./css/nosotros.css"> -->
+    <!-- <link rel="stylesheet" href="./css/mensaje_emergente.css"> -->
+    <link rel="stylesheet" href="./css/menu-left.css">
+</head>
+<body class="fondo" background="./assets/img/BACKGROUND.jpeg">
+
+<div class="scrollable-div" id="cuerpo">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- <h1><a class="navbar-brand AlineadoAlMenu" href="./index.html">Giacoboni.com.ar</a></h1> -->
+        <h1><a class="AlineadoAlMenu QuitarDecoracion" href="./index.html">Giacoboni.com.ar</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-toggle no-opacity" id="navbarNav">
+            <ul class="navbar-nav ml-auto menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contáctenos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+<!-- <div id="clearfix"></div> -->
+<!-- Contenido principal -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Formulario de búsqueda en Google -->
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <div class="input-group mb-3">
+                <input type="text" name="q" class="form-control" placeholder="Buscar en Google" aria-label="Buscar en Google" aria-describedby="basic-addon2">
+            </div>
+        </form>
+        <div class="col-md-6">
+            <!-- <audio controls autoplay>
+                <source src="./assets/sound/Bienvenida.m4a" type="audio/mpeg">
+            </audio> -->
+            <!-- <div class="hover-message mt-3">¡Hola! Pasa el mouse por aquí para ver el menú.</div> -->
+        </div>
+        <div class="col-md-6">
+            <img class="img-fluid cool-backdropfilter" src="./assets/img/ServicePC.jpg" alt="Service de PC">
+            <div id="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- <footer> -->
+    <!-- <p>Gracias por tu visita! <a target="_blank" href="https://giacoboni.com.ar">Giacoboni.com.ar</a> 
+    <br>Diseñado por Jeremias</p> -->
+  <!-- </footer> -->
+  <footer>
+    <p>Gracias por tu visita! <a target="_blank" href="https://giacoboni.com.ar">Giacoboni.com.ar</a> 
+    <br>Diseñado por Jeremias</p>
   </footer>
-  </body>
+</div>
+<!-- Enlaces a Bootstrap JavaScript y jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha384-o9IABt7MPqF7nOi/2egAq5Qqf5x67fSLb3i0JtMsr5z6z5HVNPiSf+0Vbr7O+zG5j" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>

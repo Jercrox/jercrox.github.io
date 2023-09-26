@@ -1,0 +1,13 @@
+  /* Alinea todos los elementos del menú a la derecha */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Espaciado entre elementos del menú */
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
