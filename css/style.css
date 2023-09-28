@@ -120,8 +120,41 @@ body {
     font-family: sans-serif;
     font-weight: 100px;
     color: rgb(255, 255, 255);
+    padding-bottom: 75px; /* Ajustar el valor según la altura del footer */
     /* text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; */
 }
+
+.chat-container {
+    height: 476px;
+    background-color: transparent;
+}
+
+.chat-box {
+    color: #0084EF;
+    background-color: #0084EF;
+    border-color: #0084EF;
+    outline-color: #0084EF;
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+  
+  .chat-container-float {
+    float: right;
+    width: 50%;
+  }
+
+/* Formulario */
+form textarea {
+    margin-bottom: 10px;
+  }
+
 
 .cool-backdropfilter {
     backdrop-filter: grayscale(100%); /* Convierte los colores a escala de grises al 100% */
@@ -362,3 +395,9 @@ body > *:not(header) > pre {
     backdrop-filter: blur(20px); /* Aplicar desenfoque de 20px */
     /* background-color: rgba(255, 255, 255, 0.2); */ /* Color de fondo desenfocado */
 /* } */
+
+.PieDePagina {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

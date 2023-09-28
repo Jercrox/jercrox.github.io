@@ -5,27 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog!</title>
   <link rel="icon" type="image/png" href="../assets/img/fav-icon.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CSS Personlizados -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/style-matrix2.css">
-  <link rel="stylesheet" href="../css/mensaje_emergente.css">
+  <!-- <link rel="stylesheet" href="../css/mensaje_emergente.css"> -->
 </head>
 <body background="../assets/img/BACKGROUND.jpeg">
-  <div class="hover-message">Hola! Pasa el mouse por aquí para ver el menú.</div>
+  <!-- <div class="hover-message">Hola! Pasa el mouse por aquí para ver el menú.</div> -->
   <div class="scrollable-div" id="cuerpo">
     <header>
-      <nav>
-        <div class="menu-toggle no-opacity">
-          <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./Blog.html">Blog</a></li>
-            <li><a href="./Servicios.html">Servicios</a></li>
-            <li><a href="./nosotros.html">Quiénes somos</a></li>
-            <li><a href="./contacto.html">Contáctenos</a></li>
-          </ul>
-        </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+              <!-- <h1><a class="navbar-brand AlineadoAlMenu" href="./index.html">Giacoboni.com.ar</a></h1> -->
+              <h1><a class="AlineadoAlMenu QuitarDecoracion" href="./Blog.html">Bienvenido a mi Blog!</a></h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse menu-toggle no-opacity" id="navbarNav">
+                  <ul class="navbar-nav ml-auto menu">
+                      <li class="nav-item">
+                          <a class="nav-link" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/Blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/nosotros.html">Quiénes somos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/contacto.html">Contáctenos</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </nav>
-    </header>
-    <h1> Bienvenido a mi Blog!</h1>
+      </header>
+    <!-- <h1> Bienvenido a mi Blog!</h1> -->
+    <!-- 3 SALTOS DE LINEA -->
+    <br><br><br>
     <p>Aquí iré colocando cosas que me gustán...</p>
     <div id="clearfix"></div>
     <h2>Los canales de YouTube que recomiendo, mirálos que están buenisimos !</h2>
@@ -73,5 +95,8 @@
       <p>Gracias por tu visita! Giacoboni.com.ar</p>
     </footer>
   </div>
+  <!-- Enlaces a Bootstrap JavaScript y jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha384-o9IABt7MPqF7nOi/2egAq5Qqf5x67fSLb3i0JtMsr5z6z5HVNPiSf+0Vbr7O+zG5j" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
