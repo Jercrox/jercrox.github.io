@@ -148,16 +148,6 @@ textarea {
     position: relative;
 }
 
-.menu-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1001; /* Asegura que el botón esté por encima del menú */
-}
-
 .menu {
     list-style-type: none;
     padding: 0;
@@ -214,6 +204,16 @@ textarea {
     justify-content: center;
     align-items: center;
 }
+
+/* .menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+} */
 
 /* Estilos adicionales para el ícono dentro del botón */
 .menu-button i {
