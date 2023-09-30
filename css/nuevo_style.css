@@ -204,7 +204,7 @@ textarea {
     cursor: pointer;
     position: absolute;
     top: 10px; /* Ajusta la posición vertical según tus necesidades */
-    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    right: 1px; /* Ajusta la posición horizontal según tus necesidades */
     z-index: 1001; /* Asegura que el botón esté por encima del menú */
     padding: 5px; /* Ajusta el relleno interno según tus necesidades */
     border-radius: 50%; /* Hace que el botón sea completamente redondeado */
