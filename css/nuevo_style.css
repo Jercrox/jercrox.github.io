@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+nav {
+    margin: 0 auto;
+}
+
 .AlineadoAlMenu {
     position: absolute;
     top: 1px;
@@ -78,6 +82,14 @@ body {
     max-width: 100%;
 }
 
+p {
+    background-color: rgba(0, 0, 0, 0.427);
+    padding: 0.10px;
+    font-size: 14px;
+    border: 1px solid rgba(54, 47, 255, 0);
+    text-align: center;
+}
+
 /* Estilos para la clase .PieDePagina */
 .PieDePagina {
     position: fixed;
@@ -115,6 +127,41 @@ textarea {
     place-items: center;
 }
 
+a.enlace {
+    text-decoration: none;
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.638);
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid greenyellow;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+a.enlace:hover {
+    color:#444;
+    background-color: greenyellow;
+}
+
+a.enlace:active {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    pointer-events: auto;
+}
+
 .imagen-centrada {
     padding: 0px;
     display: inline-block;
@@ -124,6 +171,15 @@ textarea {
 
 .margin-lef {
     margin-left: 2%;
+}
+
+.scrollable-div {
+  /* max-height: 79%; */
+  /* margin-left: 2%; */
+  width: 100%;
+  /* height: 67%; */
+  overflow-y: auto;
+  align-content: center;
 }
 
 /* Keyframes para la animación neon */
@@ -224,3 +280,112 @@ textarea {
 /* .menu-toggle:hover .menu {
     opacity: 1;
 } */
+
+
+/* --------------Códigos Que faltaban----------------------------- */
+  h1 {
+    margin: 0;
+    font-family: "Satisfy";
+    text-align: center;
+    font-weight: 400;
+    line-height: 60px;
+    color: #fff; /* Color del texto en blanco */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+    animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
+  }
+  
+  h2 {
+    margin: 0;
+    font-family: "Pacifico";
+    text-align: left;
+    font-weight: 400;
+    line-height: 60px;
+    color: #fff; /* Color del texto en blanco */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+    animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
+    background-color: rgba(0, 0, 0, 0.638);
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid rgb(1, 1, 1);
+  }
+  
+.boton:hover{
+    box-shadow: 0 0 10px white;
+}
+
+.boton:active{
+    box-shadow: 0 0 10px white inset;
+}
+
+:is(#video-container, .YT-Video) {
+    width: 480px; /* 560 */
+    display: inline-block;
+    height: 270px; /* 315 */
+      }
+#video-container {
+    position: relative;
+}
+#video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#video-container:hover #video-overlay {
+    opacity: 0.5;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Grids */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto; /* Cambiamos a tres filas de alto automático */
+    grid-column-gap: 0px;
+    grid-row-gap: 10px; /* Añadimos un espacio entre las filas */
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 6;
+    padding: 10px; /* Añadimos un relleno para los elementos dentro del HEADER */
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 6; /* Cambiamos las coordenadas para el BODY */
+    padding: 10px; /* Añadimos un relleno para los elementos dentro del BODY */
+    top: 10%; 
+    position: absolute;
+}
+
+.div3 {
+    grid-area: 3 / 1 / 4 / 6; /* Cambiamos las coordenadas para el FOOTER */
+    padding: 10px; /* Añadimos un relleno para los elementos dentro del FOOTER */
+}
+
+#footer {
+    border: 1px solid black;
+    /* margin-top: -15px; */
+}
