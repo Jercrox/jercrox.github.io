@@ -1,0 +1,226 @@
+/* Estilos de fuentes personalizadas */
+@font-face {
+    font-family: "Satisfy";
+    src: url("../assets/fonts/Satisfy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("../assets/fonts/Pacifico-Regular.ttf");
+}
+
+/* Estilos generales */
+.Fondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para los encabezados */
+.Header {
+    text-align: center;
+}
+
+.AlineadoAlMenu {
+    position: absolute;
+    top: 1px;
+    /* top: 23px;
+    left: 11px; */
+    /* font-size: 26px; */
+}
+
+.Header__logo {
+    margin: 0;
+    font-family: "Satisfy";
+    text-align: center;
+    font-weight: 400;
+    line-height: 60px;
+    color: #fff;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.Header__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Header__toggler {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+}
+
+body {
+    /* background-color: #000000; */
+    /* background: linear-gradient(to bottom, #3498db, #1abc9c);
+    backdrop-filter: blur(10px); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: sans-serif;
+    font-weight: 100px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 75px; /* Ajustar el valor según la altura del footer */
+    /* text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; */
+}
+
+/* Estilos para la clase .cool-backdropfilter */
+.cool-backdropfilter {
+    backdrop-filter: grayscale(100%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.cool-backdropfilter__image {
+    max-width: 100%;
+}
+
+/* Estilos para la clase .PieDePagina */
+.PieDePagina {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.638);
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Estilos para otros elementos */
+input:not([type="color"]),
+select,
+textarea {
+    background-color: #777;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: lightgray;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.OcultarBarraDeDesplazamiento {
+    overflow-y: hidden;
+}
+
+.btnForm {
+    display: grid;
+    place-items: center;
+}
+
+.imagen-centrada {
+    padding: 0px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-lef {
+    margin-left: 2%;
+}
+
+/* Keyframes para la animación neon */
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    100% {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+/* Estilo para la clase .QuitarDecoracion */
+.QuitarDecoracion {
+    text-decoration: none;
+}
+
+/* Estilos del menu */
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1001; /* Asegura que el botón esté por encima del menú */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff000078;
+    z-index: 1000; /* Aumenta el valor de z-index para asegurarse de que esté por encima de otros elementos */
+    position: absolute; /* Cambia a position: absolute */
+    top: 0px;
+    font-style: inherit;
+    right: 0px;
+    /* opacity: 0; */
+    transition: opacity 0.3s;
+    text-decoration: none;
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.638);
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid greenyellow;
+    border-radius: 10px; /* Agrega bordes redondeados */
+}
+
+.menu li {
+    text-align: right;
+    padding: 0px 2px;
+    /* border-bottom: 1px solid #8f6363; */
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00ffff;
+}
+
+/* Estilos para el botón del menú */
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus necesidades */
+    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    z-index: 1001; /* Asegura que el botón esté por encima del menú */
+    padding: 5px; /* Ajusta el relleno interno según tus necesidades */
+    border-radius: 50%; /* Hace que el botón sea completamente redondeado */
+    width: 30px; /* Ajusta el ancho del botón según tus necesidades */
+    height: 30px; /* Ajusta la altura del botón según tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos adicionales para el ícono dentro del botón */
+.menu-button i {
+    color: #fff; /* Cambia el color del ícono */
+    font-size: 20px; /* Ajusta el tamaño del ícono según tus necesidades */
+}
+
+/* .menu-toggle:hover .menu {
+    opacity: 1;
+} */

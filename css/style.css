@@ -85,6 +85,7 @@
 
 #footer {
     border: 1px solid black;
+    /* margin-top: -15px; */
 }
 
 .margin-lef {
@@ -135,6 +136,17 @@ body {
     border-color: #0084EF;
     outline-color: #0084EF;
   }
+
+.BuscarGoogle {
+    position: absolute;
+    top: 67px;
+    /* max-width: 344px; */
+    max-width: 468px;
+}
+
+.OcultarBarraDeDesplazamiento {
+    overflow-y: hidden;
+}
 
   .container {
     display: flex;
@@ -296,7 +308,7 @@ nav {
 
 .AlineadoAlMenu {
     position: absolute;
-    top: 18px;
+    top: 2px;
 }
 
 .menu-toggle {
@@ -313,9 +325,11 @@ nav {
     /* flex-direction: column; */
     z-index: 7;
     position: absolute;
-    top: 0px;
+    /* top: 0px; */
+    top: -8px;
     font-style: inherit;
-    right: 83px;
+    /* right: 83px; */
+    right: 0px;
     /* opacity: 0; */
     transition: opacity 0.3s;
     text-decoration: none;
@@ -386,15 +400,6 @@ nav {
 /* .img-fluid {
     max-width: fit-content;
 } */
-
-/* Aplicar un fondo desenfocado a los elementos de texto dentro del body */
-/* body > *:not(header) > h1,
-body > *:not(header) > h2,
-body > *:not(header) > p,
-body > *:not(header) > pre {
-    backdrop-filter: blur(20px); /* Aplicar desenfoque de 20px */
-    /* background-color: rgba(255, 255, 255, 0.2); */ /* Color de fondo desenfocado */
-/* } */
 
 .PieDePagina {
     position: fixed;

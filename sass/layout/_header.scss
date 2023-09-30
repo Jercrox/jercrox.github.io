@@ -1,0 +1,33 @@
+$isOnline: conectando;
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+
+i {
+    font-size: 3rem;
+    @if ($isOnline == true) {
+        color: green;
+    }@else if($isOnline == false){
+        color: red;
+    }@else{
+        color: gray;
+    }
+}
+
+nav {
+    ul{
+        list-style: none;
+
+        li{
+            color: blue;
+
+            &:hover{
+                color: red;
+            }
+        }
+
+    }
+}
+}
