@@ -8,16 +8,16 @@ body {
 form {
     display: inline-block;
     text-align: left;
-    max-width: 468px;
-    padding: 87px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
+    max-width: 617px;
+    padding: 19px;
+    border: 3px solid #ccc;
+    border-radius: 41px;
     margin: 0 auto;
-    /*Centrarhorizontalmenteelformulario*/
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    -moz-border-radius: 41px;
+    -ms-border-radius: 41px;
+    -o-border-radius: 41px;
+    -webkit-border-radius: 41px;
+    -moz-border-radius: 41px;
 }
 
 label {

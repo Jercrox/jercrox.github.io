@@ -182,6 +182,12 @@ a.enlace:active {
   align-content: center;
 }
 
+.fix-footer {
+    padding-bottom: 75px;  /* Ajustar el valor según la altura del footer */
+}
+
+
+
 /* Keyframes para la animación neon */
 @keyframes neon {
     0% {
@@ -211,7 +217,7 @@ a.enlace:active {
     background-color: #ff000078;
     z-index: 1000; /* Aumenta el valor de z-index para asegurarse de que esté por encima de otros elementos */
     position: absolute; /* Cambia a position: absolute */
-    top: 0px;
+    /* top: 0px; */
     font-style: inherit;
     right: 0px;
     /* opacity: 0; */
@@ -224,6 +230,14 @@ a.enlace:active {
     display: inline-block;
     border: 1px solid greenyellow;
     border-radius: 10px; /* Agrega bordes redondeados */
+}
+
+.menu-top1 {
+    top: 0px;
+}
+
+.menu-top2 {
+    top: -5px;
 }
 
 .menu li {
