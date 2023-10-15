@@ -1,7 +1,7 @@
-$colores: red, blue, green, yellow;
+$colores: "red", "blue", "green", "yellow";
 
 @each $var in $colores {
   .#{$var} {
-    background-color: $var;
+    color: unquote($var); // Agregamos unquote para eliminar las comillas
   }
 }

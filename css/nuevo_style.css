@@ -1,176 +1,194 @@
+@charset "UTF-8";
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
 /* Estilos de fuentes personalizadas */
 @font-face {
-    font-family: "Satisfy";
-    src: url("../assets/fonts/Satisfy-Regular.ttf");
+  font-family: "Satisfy";
+  src: url("../assets/fonts/Satisfy-Regular.ttf");
 }
-
 @font-face {
-    font-family: "Pacifico";
-    src: url("../assets/fonts/Pacifico-Regular.ttf");
+  font-family: "Pacifico";
+  src: url("../assets/fonts/Pacifico-Regular.ttf");
 }
-
 /* Estilos generales */
 .Fondo {
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Estilos para los encabezados */
 .Header {
-    text-align: center;
+  text-align: center;
 }
 
 nav {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .AlineadoAlMenu {
-    position: absolute;
-    top: 1px;
-    /* top: 23px;
-    left: 11px; */
-    /* font-size: 26px; */
+  position: absolute;
+  top: 1px;
+  /* top: 23px;
+  left: 11px; */
+  /* font-size: 26px; */
+}
+
+.TextoNeon, .Header__logo {
+  text-align: center;
+  font-weight: 400;
+  line-height: 60px;
+  color: #fff;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  animation: neon 1.5s ease-in-out infinite alternate;
 }
 
 .Header__logo {
-    margin: 0;
-    font-family: "Satisfy";
-    text-align: center;
-    font-weight: 400;
-    line-height: 60px;
-    color: #fff;
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
-    animation: neon 1.5s ease-in-out infinite alternate;
+  /* Utilizamos @extend para reutilizar estilos */
+  font-family: "Satisfy";
 }
 
-.Header__link {
-    text-decoration: none;
-    color: inherit;
+.Header__link, .PieDePagina__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .Header__toggler {
-    display: inline-block;
-    vertical-align: middle;
-    background-color: transparent;
-    border: none;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  border: none;
 }
 
 body {
-    /* background-color: #000000; */
-    /* background: linear-gradient(to bottom, #3498db, #1abc9c);
-    backdrop-filter: blur(10px); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    font-family: sans-serif;
-    font-weight: 100px;
-    color: rgb(255, 255, 255);
-    padding-bottom: 75px; /* Ajustar el valor según la altura del footer */
-    /* text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; */
+  /* background-color: #000000; */
+  /* background: linear-gradient(to bottom, #3498db, #1abc9c);
+  backdrop-filter: blur(10px); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: sans-serif;
+  font-weight: 100px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 75px; /* Ajustar el valor según la altura del footer */
+  /* text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; */
 }
 
 /* Estilos para la clase .cool-backdropfilter */
 .cool-backdropfilter {
-    backdrop-filter: grayscale(100%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 20px;
+  backdrop-filter: grayscale(100%);
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .cool-backdropfilter__image {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 p {
-    background-color: rgba(0, 0, 0, 0.427);
-    padding: 0.10px;
-    font-size: 14px;
-    border: 1px solid rgba(54, 47, 255, 0);
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.427);
+  padding: 0.1px;
+  font-size: 14px;
+  border: 1px solid rgba(54, 47, 255, 0);
+  text-align: center;
 }
 
 /* Estilos para la clase .PieDePagina */
 .PieDePagina {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.638);
-    text-align: center;
-    padding: 4px;
-    font-size: 14px;
-    color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.638);
+  text-align: center;
+  padding: 4px;
+  font-size: 14px;
+  color: #fff;
 }
 
 /* Estilos para otros elementos */
-input:not([type="color"]),
+input:not([type=color]),
 select,
 textarea {
-    background-color: #777;
-    border-radius: 20px;
-    border: none;
-    padding: 10px 20px;
-    color: lightgray;
+  background-color: #777;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  color: lightgray;
 }
 
 .subrayado {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .OcultarBarraDeDesplazamiento {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .btnForm {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 a.enlace {
-    text-decoration: none;
-    color: greenyellow;
-    background-color: rgba(0, 0, 0, 0.638);
-    padding: 20px;
-    font-size: 24px;
-    text-align: center;
-    display: inline-block;
-    border: 1px solid greenyellow;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    transition: all 200ms;
-    -webkit-transition: all 200ms;
-    -moz-transition: all 200ms;
-    -ms-transition: all 200ms;
-    -o-transition: all 200ms;
+  text-decoration: none;
+  color: greenyellow;
+  background-color: rgba(0, 0, 0, 0.638);
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid greenyellow;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
 }
 
 a.enlace:hover {
-    color:#444;
-    background-color: greenyellow;
+  color: #444;
+  background-color: greenyellow;
 }
 
 a.enlace:active {
-    transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    -o-transform: scale(0.95);
-    pointer-events: auto;
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  pointer-events: auto;
 }
 
 .imagen-centrada {
-    padding: 0px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+  padding: 0px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
 
 .margin-lef {
-    margin-left: 2%;
+  margin-left: 2%;
 }
 
 .scrollable-div {
@@ -183,96 +201,93 @@ a.enlace:active {
 }
 
 .fix-footer {
-    padding-bottom: 75px;  /* Ajustar el valor según la altura del footer */
+  padding-bottom: 75px; /* Ajustar el valor según la altura del footer */
 }
-
-
 
 /* Keyframes para la animación neon */
 @keyframes neon {
-    0% {
-        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
-    }
-    100% {
-        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
-    }
+  0% {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+  100% {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+  }
 }
-
 /* Estilo para la clase .QuitarDecoracion */
 .QuitarDecoracion {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Estilos del menu */
 .menu-toggle {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #ff000078;
-    z-index: 1000; /* Aumenta el valor de z-index para asegurarse de que esté por encima de otros elementos */
-    position: absolute; /* Cambia a position: absolute */
-    /* top: 0px; */
-    font-style: inherit;
-    right: 0px;
-    /* opacity: 0; */
-    transition: opacity 0.3s;
-    text-decoration: none;
-    color: greenyellow;
-    background-color: rgba(0, 0, 0, 0.638);
-    font-size: 14px;
-    text-align: center;
-    display: inline-block;
-    border: 1px solid greenyellow;
-    border-radius: 10px; /* Agrega bordes redondeados */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 0, 0, 0.4705882353);
+  z-index: 1000; /* Aumenta el valor de z-index para asegurarse de que esté por encima de otros elementos */
+  position: absolute; /* Cambia a position: absolute */
+  /* top: 0px; */
+  font-style: inherit;
+  right: 0px;
+  /* opacity: 0; */
+  transition: opacity 0.3s;
+  text-decoration: none;
+  color: greenyellow;
+  background-color: rgba(0, 0, 0, 0.638);
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid greenyellow;
+  border-radius: 10px; /* Agrega bordes redondeados */
 }
 
 .menu-top1 {
-    top: 0px;
+  top: 0px;
 }
 
 .menu-top2 {
-    top: -5px;
+  top: -5px;
 }
 
 .menu li {
-    text-align: right;
-    padding: 0px 2px;
-    /* border-bottom: 1px solid #8f6363; */
-    display: inline-block;
+  text-align: right;
+  padding: 0px 2px;
+  /* border-bottom: 1px solid #8f6363; */
+  display: inline-block;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
 }
 
 .menu a:hover {
-    color: #00ffff;
+  color: #00ffff;
 }
 
 /* Estilos para el botón del menú */
 .menu-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 10px; /* Ajusta la posición vertical según tus necesidades */
-    right: 1px; /* Ajusta la posición horizontal según tus necesidades */
-    z-index: 1001; /* Asegura que el botón esté por encima del menú */
-    padding: 5px; /* Ajusta el relleno interno según tus necesidades */
-    border-radius: 50%; /* Hace que el botón sea completamente redondeado */
-    width: 30px; /* Ajusta el ancho del botón según tus necesidades */
-    height: 30px; /* Ajusta la altura del botón según tus necesidades */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; /* Ajusta la posición vertical según tus necesidades */
+  right: 1px; /* Ajusta la posición horizontal según tus necesidades */
+  z-index: 1001; /* Asegura que el botón esté por encima del menú */
+  padding: 5px; /* Ajusta el relleno interno según tus necesidades */
+  border-radius: 50%; /* Hace que el botón sea completamente redondeado */
+  width: 30px; /* Ajusta el ancho del botón según tus necesidades */
+  height: 30px; /* Ajusta la altura del botón según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .menu-button {
@@ -284,122 +299,151 @@ a.enlace:active {
     right: 0;
     z-index: 1001;
 } */
-
 /* Estilos adicionales para el ícono dentro del botón */
 .menu-button i {
-    color: #fff; /* Cambia el color del ícono */
-    font-size: 20px; /* Ajusta el tamaño del ícono según tus necesidades */
+  color: #fff; /* Cambia el color del ícono */
+  font-size: 20px; /* Ajusta el tamaño del ícono según tus necesidades */
 }
 
 /* .menu-toggle:hover .menu {
     opacity: 1;
 } */
-
-
 /* --------------Códigos Que faltaban----------------------------- */
-  h1 {
-    margin: 0;
-    font-family: "Satisfy";
-    text-align: center;
-    font-weight: 400;
-    line-height: 60px;
-    color: #fff; /* Color del texto en blanco */
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
-    animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
-  }
-  
-  h2 {
-    margin: 0;
-    font-family: "Pacifico";
-    text-align: left;
-    font-weight: 400;
-    line-height: 60px;
-    color: #fff; /* Color del texto en blanco */
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
-    animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
-    background-color: rgba(0, 0, 0, 0.638);
-    padding: 20px;
-    font-size: 24px;
-    text-align: center;
-    border: 1px solid rgb(1, 1, 1);
-  }
-  
-.boton:hover{
-    box-shadow: 0 0 10px white;
+h1 {
+  margin: 0;
+  font-family: "Satisfy";
+  text-align: center;
+  font-weight: 400;
+  line-height: 60px;
+  color: #fff; /* Color del texto en blanco */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+  animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
 }
 
-.boton:active{
-    box-shadow: 0 0 10px white inset;
+h2 {
+  margin: 0;
+  font-family: "Pacifico";
+  text-align: left;
+  font-weight: 400;
+  line-height: 60px;
+  color: #fff; /* Color del texto en blanco */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+  animation: neon 1.5s ease-in-out infinite alternate; /* Animación de neón */
+  background-color: rgba(0, 0, 0, 0.638);
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid rgb(1, 1, 1);
+}
+
+.boton:hover {
+  box-shadow: 0 0 10px white;
+}
+
+.boton:active {
+  box-shadow: 0 0 10px white inset;
 }
 
 :is(#video-container, .YT-Video) {
-    width: 480px; /* 560 */
-    display: inline-block;
-    height: 270px; /* 315 */
-      }
-#video-container {
-    position: relative;
+  width: 480px;
+  display: inline-block;
+  height: 270px;
 }
+
+#video-container {
+  position: relative;
+}
+
 #video-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    height: 30%;
-    background-color: transparent;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background-color: transparent;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 #video-container:hover #video-overlay {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 nav ul li {
-    float: left;
-    list-style: none;
-    margin: 10px;
+  float: left;
+  list-style: none;
+  margin: 10px;
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 /* Grids */
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto auto auto; /* Cambiamos a tres filas de alto automático */
-    grid-column-gap: 0px;
-    grid-row-gap: 10px; /* Añadimos un espacio entre las filas */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto; /* Cambiamos a tres filas de alto automático */
+  grid-column-gap: 0px;
+  grid-row-gap: 10px; /* Añadimos un espacio entre las filas */
 }
 
 .div1 {
-    grid-area: 1 / 1 / 2 / 6;
-    padding: 10px; /* Añadimos un relleno para los elementos dentro del HEADER */
+  grid-area: 1/1/2/6;
+  padding: 10px; /* Añadimos un relleno para los elementos dentro del HEADER */
 }
 
 .div2 {
-    grid-area: 2 / 1 / 3 / 6; /* Cambiamos las coordenadas para el BODY */
-    padding: 10px; /* Añadimos un relleno para los elementos dentro del BODY */
-    top: 10%; 
-    position: absolute;
+  grid-area: 2/1/3/6; /* Cambiamos las coordenadas para el BODY */
+  padding: 10px; /* Añadimos un relleno para los elementos dentro del BODY */
+  top: 10%;
+  position: absolute;
 }
 
 .div3 {
-    grid-area: 3 / 1 / 4 / 6; /* Cambiamos las coordenadas para el FOOTER */
-    padding: 10px; /* Añadimos un relleno para los elementos dentro del FOOTER */
+  grid-area: 3/1/4/6; /* Cambiamos las coordenadas para el FOOTER */
+  padding: 10px; /* Añadimos un relleno para los elementos dentro del FOOTER */
 }
 
 #footer {
-    border: 1px solid black;
-    /* margin-top: -15px; */
+  border: 1px solid black;
+  /* margin-top: -15px; */
 }
+
+.UnaVez {
+  animation-iteration-count: 1; /* La animación se ejecutará solo una vez */
+}
+
+.TextoArcoiris {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 200% 100%;
+  animation: rainbow 10s linear infinite;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: none;
+  -webkit-animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/*# sourceMappingURL=nuevo_style.css.map */
