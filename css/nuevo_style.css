@@ -61,7 +61,7 @@ nav {
   font-family: "Satisfy";
 }
 
-.Header__link, .PieDePagina__link {
+.Header__link, .PieDePagina__link, .Link {
   text-decoration: none;
   color: inherit;
 }
@@ -114,7 +114,7 @@ p {
   bottom: 0;
   width: 100%;
   border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.638);
+  /* background-color: rgba(0, 0, 0, 0.638); */
   text-align: center;
   padding: 4px;
   font-size: 14px;
